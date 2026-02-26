@@ -1,0 +1,102 @@
+<!-- Members Table -->
+<style>
+    .member-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Noto Serif Devanagari", serif;
+        font-size: 14px;
+    }
+
+    .member-table th,
+    .member-table td {
+        border: 1px solid #000;
+        padding: 6px 8px;
+        text-align: center;
+        line-height: 1.4rem;
+    }
+
+    .member-table th {
+        background-color: #e6e6e6; /* grey header like image */
+        font-weight: 700;
+    }
+
+    .member-table td {
+        font-weight: 500;
+    }
+
+    .member-table td.left {
+        text-align: left;
+        padding-left: 10px;
+    }
+</style>
+
+<table class="member-table">
+    <thead>
+        <tr>
+            <th>क्र.सं.</th>
+            <th>नाम</th>
+            <th>पद</th>
+            <th>ठेगाना</th>
+            <th>नागरिकता नं.</th>
+            <th>सम्पर्क नं</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>१</td>
+            <td class="left">{{ member1_name }}</td>
+            <td>{{ member1_position }}</td>
+            <td class="left">{{ member1_address }}</td>
+            <td>{{ member1_citizenship }}</td>
+            <td>{{ member1_contact }}</td>
+        </tr>
+        <tr>
+            <td>२</td>
+            <td class="left">{{ member2_name }}</td>
+            <td>{{ member2_position }}</td>
+            <td class="left">{{ member2_address }}</td>
+            <td>{{ member2_citizenship }}</td>
+            <td>{{ member2_contact }}</td>
+        </tr>
+        <tr>
+            <td>३</td>
+            <td class="left">{{ member3_name }}</td>
+            <td>{{ member3_position }}</td>
+            <td class="left">{{ member3_address }}</td>
+            <td>{{ member3_citizenship }}</td>
+            <td>{{ member3_contact }}</td>
+        </tr>
+        <tr>
+            <td>४</td>
+            <td class="left">{{ member4_name }}</td>
+            <td>{{ member4_position }}</td>
+            <td class="left">{{ member4_address }}</td>
+            <td>{{ member4_citizenship }}</td>
+            <td>{{ member4_contact }}</td>
+        </tr>
+        <tr>
+            <td>५</td>
+            <td class="left">{{ member5_name }}</td>
+            <td>{{ member5_position }}</td>
+            <td class="left">{{ member5_address }}</td>
+            <td>{{ member5_citizenship }}</td>
+            <td>{{ member5_contact }}</td>
+        </tr>
+        <tr>
+            <td>६</td>
+            <td class="left">{{ member6_name }}</td>
+            <td>{{ member6_position }}</td>
+            <td class="left">{{ member6_address }}</td>
+            <td>{{ member6_citizenship }}</td>
+            <td>{{ member6_contact }}</td>
+        </tr>
+        <tr>
+            <td>७</td>
+            <td class="left">{{ member7_name }}</td>
+            <td>{{ member7_position }}</td>
+            <td class="left">{{ member7_address }}</td>
+            <td>{{ member7_citizenship }}</td>
+            <td>{{ member7_contact }}</td>
+        </tr>
+    </tbody>
+</table>
