@@ -8,7 +8,8 @@
     <title>सम्झौता पत्र [Page-4] </title>
 
     <!-- Devanagari Serif Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap"
+        rel="stylesheet">
 
     <style>
         :root {
@@ -31,7 +32,7 @@
             color: #000;
         }
 
-        #template {
+        .template {
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -48,7 +49,7 @@
         /* Empty Header Section (structure only) */
         .municipality_section {
             padding-bottom: 0.4rem;
-            min-height: 90px; 
+            min-height: 90px;
         }
 
         .subject {
@@ -56,13 +57,13 @@
             font-weight: bold;
             margin: 14px 0 0px 0;
             text-decoration: underline;
-            font-size: 15px;
+            font-size: 16px;
         }
-        
+
         .fiscal-year {
             text-align: center;
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
             margin-bottom: 20px;
         }
 
@@ -70,27 +71,45 @@
             text-align: left;
             line-height: 1.65rem;
             /* font-weight: 400; */
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .section-title {
             font-weight: bold;
-            font-size: 12px;
+            font-size: 13px;
             margin-top: 4px;
+
+        }
+
+        .section-title-terms {
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 16px;
+            text-decoration: underline;
+
+        }
+
+        .section-title-agree {
+            font-weight: bold;
+            font-size: 13px;
+            margin-top: 16px;
+            text-align: center;
+            text-decoration: underline;
 
         }
 
         .indent {
             margin-left: 20px;
-            font-size: 12px;
-            
-            
+            font-size: 13px;
+
+
         }
+
         .indent_inline {
             margin-left: 5px;
-            font-size: 12px;
-            
-            
+            font-size: 13px;
+
+
         }
 
         .inline {
@@ -99,11 +118,63 @@
 
         }
 
+        /* Table Styles */
+        .member-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 13px;
+        }
+
+        .member-table th,
+        .member-table td {
+            border: 1px solid #000;
+            padding: 6px 8px;
+            text-align: center;
+            line-height: 1.4rem;
+        }
+
+        .member-table th {
+            background-color: #e6e6e6;
+            /* grey header like image */
+            font-weight: bold;
+        }
+
+        .member-table td {
+            font-size: 12px;
+        }
+
+        .member-table td.left {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        ol.nepali {
+            list-style-type: devanagari;
+            margin-left: 20px;
+            /* Works in modern browsers */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* 3 equal columns */
+            gap: 10px;
+        }
+
+        .item {
+            padding: 10px;
+
+        }
+
+        .item .indent {
+            margin-left: 0px;
+        }
     </style>
 </head>
 
 <body>
-    <section id="template">
+    <section class="template">
         <section class="application_section">
 
             <!-- Empty Header -->
@@ -122,53 +193,240 @@
             <div class="content">
 
                 <p class="section-title">सम्झौता गर्ने संस्थाको नाम:Contracting Party Name.........</p>
-                
+
                 <p class="section-title">१. सम्झौता गर्ने पक्ष र आयोजनाः</p>
 
-                <p class="section-title">(क) उपभोक्ता समिति /समुदायमा आधारीत संस्था /गैर सरकारी संस्थाको विवरण : सम्झौता गर्ने संस्थाको प्रतिनिधीको,</p>
-                <p class="indent">१.नामः-  chairperson_name..........</p>
-                <p class="indent">२.पदः   secretary_name..........   </p>
+                <p class="section-title">(क) उपभोक्ता समिति /समुदायमा आधारीत संस्था /गैर सरकारी संस्थाको विवरण : सम्झौता
+                    गर्ने संस्थाको प्रतिनिधीको,</p>
+                <p class="indent">१.नामः- chairperson_name..........</p>
+                <p class="indent">२.पदः secretary_name.......... </p>
 
                 <p class="section-title">(ख) आयोजनाको विवरणः</p>
-                <p class="indent">१. नाम:   project_name..........   </p>
-                <p class="indent">२. ठेगाना:   project_location..........   </p>
-                <p class="indent">३. वडा नं.:   ward_office..........   </p>
-                <p class="indent">४. उद्देश्य:   project_objective..........   </p>
-                <p class="indent">५. बजेट स्रोत:   budget-source..........   </p>
-                <p class="indent">६.आयोजना स्वीकृत गर्ने निकायः   approving_authority..........   </p>
+                <p class="indent">१. नाम: project_name.......... </p>
+                <p class="indent">२. ठेगाना: project_location.......... </p>
+                <p class="indent">३. वडा नं.: ward_office.......... </p>
+                <p class="indent">४. उद्देश्य: project_objective.......... </p>
+                <p class="indent">५. बजेट स्रोत: budget-source.......... </p>
+                <p class="indent">६.आयोजना स्वीकृत गर्ने निकायः approving_authority.......... </p>
                 <div class="inline">
-                <p class="indent">७.आयोजना शुरु हुने मितिः </p>
-                <p class="indent_inline">  start_date..........   </p>
+                    <p class="indent">७.आयोजना शुरु हुने मितिः </p>
+                    <p class="indent_inline"> start_date.......... </p>
                 </div>
                 <div class="inline">
-                <p class="indent">८.आयोजना सम्पन्न हुने मितिः </p>
-                <p class="indent_inline">  end_date..........    </p>
+                    <p class="indent">८.आयोजना सम्पन्न हुने मितिः </p>
+                    <p class="indent_inline"> end_date.......... </p>
                 </div>
 
                 <p class="section-title">(ग)लागत व्यहोर्ने श्रोतहरुः</p>
-                <p class="indent">विनियोजित रकम:   allocated_budget..........   </p>
-                <p class="indent">१.संघ बाट रु. -budget..........   </p>
-                <p class="indent">२.प्रदेश बाट रु. - province_budget..........   </p>
-                <p class="indent">३.कार्यालयबाट रु.-   office_contribution..........   </p>
-                <p class="indent">४.उपभोक्ता समितिबाट नगद रु. -   ..........   </p>
-                <p class="indent">५.गैर सरकारी संघ संस्थाबाट रु. -   ..........   </p>
-                <p class="indent">६.विदेशी दातृ संघ संस्थाबाट रु. -   ..........   </p>
-                <p class="indent">७.समुदायमा आधारित संस्थाबाट रु. -   ..........   </p>
-                <p class="indent">८.श्रमदान बाट रु. -   labor_contribution..........   </p>
-                <p class="indent">९. अन्यबाट रु. -   other_contribution..........   </p>
-                <p class="indent">जम्मा लागत अनुमान:   total_estimated_cost..........   </p>
+                <p class="indent">विनियोजित रकम: allocated_budget.......... </p>
+                <p class="indent">१.संघ बाट रु. -budget.......... </p>
+                <p class="indent">२.प्रदेश बाट रु. - province_budget.......... </p>
+                <p class="indent">३.कार्यालयबाट रु.- office_contribution.......... </p>
+                <p class="indent">४.उपभोक्ता समितिबाट नगद रु. - .......... </p>
+                <p class="indent">५.गैर सरकारी संघ संस्थाबाट रु. - .......... </p>
+                <p class="indent">६.विदेशी दातृ संघ संस्थाबाट रु. - .......... </p>
+                <p class="indent">७.समुदायमा आधारित संस्थाबाट रु. - .......... </p>
+                <p class="indent">८.श्रमदान बाट रु. - labor_contribution.......... </p>
+                <p class="indent">९. अन्यबाट रु. - other_contribution.......... </p>
+                <p class="indent">जम्मा लागत अनुमान: total_estimated_cost.......... </p>
 
-               
-                <p class="indent">१. आयोजनाबाट लाभान्वित हुने:</p>
-                <p class="indent">२. घरपरिवार संख्या:   household_count..........   </p>
-                <p class="indent">३. जनसंख्या:   population..........   </p>
-                <p class="indent">४. संगठित संस्था:   organized_groups..........   </p>
-                <p class="indent">५. अन्य:   others ..........  </p>
+
+                <p class="section-title">२. आयोजनाबाट लाभान्वित हुने:</p>
+                <p class="indent">१. घरपरिवार संख्या: household_count.......... </p>
+                <p class="indent">२. जनसंख्या: population.......... </p>
+                <p class="indent">३. संगठित संस्था: organized_groups.......... </p>
+                <p class="indent">४. अन्य: others .......... </p>
             </div>
 
-            
+
+            <div>
+                <p class="section-title">३. उपभोक्ता समिति /गैर सरकारी संस्था /समुदायमा आधारीत संस्था सम्बन्धी विवरण :
+                </p>
+                <table class="member-table">
+                    <thead>
+                        <tr>
+                            <th>क्र.सं.</th>
+                            <th>नाम</th>
+                            <th>पद</th>
+                            <th>ठेगाना</th>
+                            <th>नागरिकता नं.</th>
+                            <th>सम्पर्क नं</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>१</td>
+                            <td class="left"> member1_name </td>
+                            <td> member1_position </td>
+                            <td class="left"> member1_address </td>
+                            <td> member1_citizenship </td>
+                            <td> member1_contact </td>
+                        </tr>
+                        <tr>
+                            <td>२</td>
+                            <td class="left"> member2_name </td>
+                            <td> member2_position </td>
+                            <td class="left"> member2_address </td>
+                            <td> member2_citizenship </td>
+                            <td> member2_contact </td>
+                        </tr>
+                        <tr>
+                            <td>३</td>
+                            <td class="left"> member3_name </td>
+                            <td> member3_position </td>
+                            <td class="left"> member3_address </td>
+                            <td> member3_citizenship </td>
+                            <td> member3_contact </td>
+                        </tr>
+                        <tr>
+                            <td>४</td>
+                            <td class="left"> member4_name </td>
+                            <td> member4_position </td>
+                            <td class="left"> member4_address </td>
+                            <td> member4_citizenship </td>
+                            <td> member4_contact </td>
+                        </tr>
+                        <tr>
+                            <td>५</td>
+                            <td class="left"> member5_name </td>
+                            <td> member5_position </td>
+                            <td class="left"> member5_address </td>
+                            <td> member5_citizenship </td>
+                            <td> member5_contact </td>
+                        </tr>
+                        <tr>
+                            <td>६</td>
+                            <td class="left"> member6_name </td>
+                            <td> member6_position </td>
+                            <td class="left"> member6_address </td>
+                            <td> member6_citizenship </td>
+                            <td> member6_contact </td>
+                        </tr>
+                        <tr>
+                            <td>७</td>
+                            <td class="left"> member7_name </td>
+                            <td> member7_position </td>
+                            <td class="left"> member7_address </td>
+                            <td> member7_citizenship </td>
+                            <td> member7_contact </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="section-title">(ग) समिति गठन गर्दा उपस्थित लाभान्वितको संख्या :......</p>
+                <p class="section-title">(घ) समिति गठन गर्दा अनुपस्थित लाभान्वितको संख्या :....... </p>
+            </div>
+
+
+            <div>
+                <p class="section-title-terms">सम्झौताका शर्तहरुः</p>
+                <p class="section-title">उपभोक्ता समितिको जिम्मेवारी तथा पालना गरिने शर्तहरु:-</p>
+                <ol class="nepali">
+                    <li>
+                        सम्झौतामा उल्लेख भएको म्याद भित्र उपभोक्ता समितिले आयोजना सम्पन्न गरिसक्नु पर्नेछ । कुनै कारण बस
+                        योजना सम्पन्न हुन नसकेमा सम्पन्न हुन नसक्नुको औचित्यको आधारमा सम्झौताको म्याद थप गर्न सक्नेछ ।
+                        यसरी म्याद थप नगरी भुक्तानी / पेश्की हुने छैन ।
+                    </li>
+                    <li>
+                        योजनामा लाग्ने सहयोग गाउँपालिका वा वडाले किस्ताबन्दीमा उपलब्ध गराउनेछ । पहिलो किस्ता खर्च
+                        गरिसकेपछि अर्को किस्ता माग गर्नु अगाडी उपभोत्ता समितिले पहिली किस्तामा की रकम र भएको रकमक दरें।
+                        सार्वजनिक परीक्षण एवं मिति, समय र स्थानमा सम्बद्धलाई जानकारी गराउनु ठी सार्वजानिक गर्ने भेलामा
+                        उपभोक्ताहरु कम्तिमा २० प्रतिशत सम्बन्धित पाराका प्रतिनिधि सामाजिक व्यक्तिहरू तरकारी, गैर सरकारी
+                        संस्थाका प्रतिनिधिहरुलाई आमन्वयातरी माग्दानी तया की विवरण सार्वजानिक पर्नेछ। सो समयमा भएका भौतिक
+                        तथा वितिय प्रगति सम्वन्धि अवलम्वन गरेका उपाय आदिको विवरणागिरी लफल गराउनु पर्दछ।
+
+                    </li>
+                    <li>
+                        योजनामा आवश्यक प्राविधिक सहयोग गाउँपालिकाबाट उपलब्ध गराईने छ ।
+                    </li>
+                    <li>
+                        उपभोक्ता समितिलाई रनिङ् बिलको आधारमा पहिलो दोभी तभी किस्ता रकम समितिको बैंक खातामा भुक्तानी
+                        दिइनेछ ।
+                    </li>
+                    <li>
+                        लागत सह‌भागिता विवरणमा उल्लेख भए‌अनुसार जन सह‌भागिता जुटाउनु समितिः निकाय को जिम्मेबारी हुनेछ ।
+                    </li>
+                    <li>
+                        योजनासंग सम्बन्धित प्राप्त नगर/ जिन्सी सामानहरू उपभोक्ता समितिले सम्बन्धित योजनामा मात्र खर्च
+                        गर्नु पर्नेछ। अन्यत्र खर्च गरेमा वा हिनामिना गरेको पाईएमा नियमानुसार कारवाही हुने छ ।
+                    </li>
+                    <li>
+                        सम्झौता खातामा नपा वडा कार्यालयबाट दस्तखत भई सकेपछि स्वीकृत बजेट उपभोक्ता समितिको बैंक खातामा
+                        नियमानुसार निकासा दिईने छ ।
+                    </li>
+                    <li>
+                        उपभोक्ता समितिले काम सम्पन्न गरिसकेपछि बाँकी रहन गएका खप्ने जिन्सी सामानहरु मर्मत सम्भार समिति
+                        गठन भएको भए सो समितिलाई र सो समिति नभए गाउँपालिका वडालाई बुझाउनु पर्ने छ ।
+                    </li>
+                    <li>
+                        मोजनाको लागि चाहिने आवश्यक कागजात यसै साथ संलग्न गरिएको छ ।
+                    </li>
+                    <li>
+                        योजनाको आर्थिक कारोबार गर्ने पदाधिकारीको नागरिकताको प्रतिलिपि यसै साथ सम्तान छ ।
+                    </li>
+                    <li>
+                        उपभोक्ता समितिले योजना संग सम्बन्धित विल भरपाईहरु, डोर हजिरी फारामहरु, जिन्सी नगदी खाताहरू,
+                        समितिको निपांप पुस्तिका आदी कागजातहरू गा.पा./ बडा कार्यालय वा सरोकारवाला पदाधिकारीले मागेका बचत
+                        उपलब्ध गराउनु पर्नेछ । साथै योजना सम्पन्न भएपछि सार्वजनिक परीक्षण समेत योजना स्थलमानै गर्नु
+                        पर्ने छ ।
+                    </li>
+                    <li>
+                        उपभोक्ता समितिका पदाधिकारीहरूलाई योजना सञ्चालन हुनु भन्दा अगाडी गाउँपालिका/ वडा कार्यालयले
+                        अभिमुखिकरण तालिम दिनु पर्ने छ ।
+                    </li>
+                    <li>
+                        योजनाको सार्वजानिक परिक्षण, सूचना पाटी, आम्दानी र खर्चको सार्वजानिकरण तथा अन्य पारदर्शिता
+                        सम्बन्धि प्रावधानको पालना गर्नु पर्ने छ ।
+                    </li>
+                    <li>
+                        उपभोक्ता समितिले योजना सम्झौता गरीसकेपछि लामो समय सम्म सञ्चालन नगर्ने, योजनाको जिन्सी/ नगदी हिना
+                        मिना गर्ने गरेको पाईएमा गा.पा./बडा कार्यालयले सम्झौता रद्ध गरी अर्को समिति गठन गराई योजना सञ्चान
+                        गर्न सक्नेछ।
+                    </li>
+                    <li>
+                        पहिले समिति संग रहेको नगदी, जिन्सी फिर्ता लिने नदिएमा सरकारी बाँकी सरह असुल उपर गरीने छ ।
+                    </li>
+                    <li>
+                        योजना सम्पन्न भएपछि सम्झौता गर्ने कार्यालयबाट जाँच पास गराई फरफारकको प्रमाण पत्र लिनु पर्दछ ।
+                        साथै उक्त योजनाको मर्मत सम्भार सम्बन्धित उपभोक्ताले नै गर्नु पर्नेछ ।
+
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <p class="section-title-agree">उपयुक्त बमोजिम सम्झौता गर्न हामी मञ्जुर छौ ।</p>
+                <div class="grid-container">
+                    <div class="item">
+                        <p class="section-title">उपभोक्ता समिति को तर्फवाटः</p>
+                        <p class="indent">नामः name .......... </p>
+                        <p class="indent">पदः अध्यक्ष  </p>
+                        <p class="indent">हस्ताक्षरः  </p>
+                    </div>
+                    <div class="item">
+                        <p class="section-title">योजना शाखाको तर्फवाटः</p>
+                        <p class="indent">नामः name .......... </p>
+                        <p class="indent">पदः योजना शाखा </p>
+                        <p class="indent">हस्ताक्षरः</p>
+                    </div>
+                    <div class="item">
+                        <p class="section-title">सुर्मा गाउँपालिका को तर्फवाटः</p>
+                        <p class="indent">नामः name .......... </p>
+                        <p class="indent">पदः प्रमुख प्रशासकीय अधिकृत </p>
+                        <p class="indent">हस्ताक्षरः </p>
+                    </div>
+                </div>
+
+
         </section>
+
+
+
     </section>
+
+
+
+
+
 </body>
 
 </html>
