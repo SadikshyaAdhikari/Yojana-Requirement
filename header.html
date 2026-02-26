@@ -1,0 +1,104 @@
+				<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <style>
+      :root {
+        --primary-color: red;
+        --secondary-color: #455A64;
+        --border-color: black;
+        --table-header-bg: #F0F0F0;
+        --background-color: #F1F1F1;
+        --font-size-base: 14px;
+        --font-size-small: 10px
+        --font-size-print: 6px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: var(--font-size-base);
+        letter-spacing: 0;
+       
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        padding-left: 200px;
+         padding-right: 200px;
+       
+
+      }
+      @media print {
+        body {
+          font-size: var(--font-size-print);
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+      
+      
+      /* Header / Municipality Section */
+      .municipality_section {
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid green;
+        
+      }
+      .municipality_section .contain {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding-top: 2rem;
+        color: var(--primary-color);
+      }
+      .municipality_logo img {
+        width: 75px;
+      }
+      .municipality_info {
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.3rem;
+        position: absolute;  
+        left: 50%;                
+       transform: translateX(-50%);
+      }
+      .serial_number {
+        color: var(--primary-color);
+        padding-top: 1rem;
+        line-height: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+      }
+     
+      
+      
+        
+    </style>
+  </head>
+  <body>
+      <div class="municipality_section">
+          <div class="contain">
+            <div class="municipality_logo">
+              <img
+                src="https://imgs.search.brave.com/2I_X7CU0qLXLO6tvSzwrpsShsdmltUWWtkYvX2E9Frg/rs:fit:700:586:1/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDcvRW1ibGVt/X29mX05lcGFsLTcw/MHg1ODYucG5n"
+                alt="logo"
+              />
+            </div>
+            <div class="municipality_info">
+             <h3>##WARD_NUMBER_HEADER## नं. वडा कार्यालय</h3>
+              <h2>##MUNICIPALITY_NAME_HEADER##</h2>
+             
+              <h4>##WARD_ADDRESS_HEADER## </h4>
+              <h4>##DISTRICT_HEADER##,##PROVINCE_HEADER##</h4>
+            </div>
+          </div>
+          <div class="serial_number">
+            <div>
+              <div>पत्र संख्या. : ##COUNT2##</div>
+              <div>चलानी नं. : </div>
+            </div>
+            <div>##C_DATE##</div>
+          </div>
+        </div>
+  </body>
+</html>
