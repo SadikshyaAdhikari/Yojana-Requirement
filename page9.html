@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>page-9</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 13px;
+            margin-top: 6px;
+        }
+
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+            text-decoration: underline;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+
+        .signature-line {
+            margin-top: 60px;
+            text-align: right;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .dotted {
+            border-top: 1px dotted #888;
+            width: 260px;
+            margin-left: auto;
+            margin-top: 60px;
+        }
+
+        .bodhartha {
+            margin-top: 30px;
+            margin-bottom: 30px;;
+            font-size: 13px;
+            line-height: 1rem;
+        }
+
+        .bodhartha-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: letter_date...</div>
+
+        <div class="content">
+            अध्यक्ष श्री,
+            <div>project_committee_name....</div>
+            <div>ward_office_name....</div>
+
+
+            <div class="subject">
+                बिषय- कार्यादेश दिइएको सम्बन्धमा
+            </div>
+
+
+            <p>
+                चालु आ ब fiscal-year... को लागि village... सभा बाट स्वीकृत बार्षिक योजना तथा कार्यक्रम अन्तर्गत तर्फको
+                सी न मा रहेको
+                लागि रु budget... विनियोजन भएको मा सो योजनको कार्यान्वयनका लागि उपभोक्ता समिति को तर्फ बाट रु budget...
+                लागत सहभागिता हुने गरि प्राबिधिक साखाबाट रु budget... को लागत अनुमान तयार भइ सो लागत अनुमान अनुसार को
+                कार्य सम्पन्न गर्नको लागि यस कार्यालयको मिति date.... को निर्णयानुसार त्यस उपभोक्ता समिति र यस
+                कार्यालय बीच सम्झौता भएको ले सम्झौताका सर्त बमोजिम कार्य संचालन गर्न सम्झौता र लागत अनुमान को प्रतिलिपि
+                यसै साथ संग्लग्न राखी यो कार्यादेश दिईएको छ। सम्झौता अनुसार मिति date.... भित्र लागत अनुमानमा उल्लेखित
+                कार्य सम्पन्न गरि जाँचपास तथा फरफारक समेत लिनुहोला ।
+
+
+            </p>
+
+            <div class="dotted"></div>
+
+            <!-- Bodhartha Section -->
+            <div class="bodhartha">
+                <p class="bodhartha-title">बोधार्थ :</p>
+
+                <p>श्री</p>
+                <p>name....</p>
+
+               
+            </div>
+
+            <div>
+                 <p>
+                    एक प्रति सम्झौता तथा लाई यसै साथ संग्लन छ साइट इन्चार्ज / प्राबिधिक खटाइ
+                    यसै बमोजिम कार्य गराउनु पर्दछ ।
+                </p>
+
+                <p>
+                    municipality_full_address......
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

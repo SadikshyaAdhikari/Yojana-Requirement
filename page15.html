@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>page-15</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .salutation{
+            font-size: 13px;
+            line-height: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+            text-decoration: underline;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+        .signature {
+            width: 200px;
+            margin-left: auto;
+            margin-top: 60px;
+            text-align: right;
+        }
+
+        .title{
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-decoration: underline;
+        }
+
+        .list{
+            font-size: 13px;
+            line-height: 1.9rem;
+            margin-top: 5px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: letter_date...</div>
+
+        <div class="content">
+            <div class="salutation">
+                <p>श्रीमान् प्रमुख प्रशासकीय अधिकृत ज्यू,</p>
+                <p>municipality_name...</p>
+                <p>executive_office_name....</p>
+                <p>province_name..., नेपाल</p>
+            </div>
+
+            <div class="subject">
+                विषय : योजना सम्झौता गरी पाउँ |
+            </div>
+
+            <p>महोदय, </p>
+            <p>
+                यस municipality_name... को गाँउ सभाबाट चालु आ.ब fiscal-year... को लागि स्वीकृत भएको ward-no... नं वडा
+                कार्यालय मा आयोजना /कार्यक्रम छनौट गरी प्राथामिकतामा परेको र सो आयोजना/कार्यक्रमको लागि रु
+                budget...(budget in word...) विनियोजित भई सकेको हुदा नियमानुसार उपभोक्ता समिति गठन भई सकेकोले उपभोक्ता
+                समितिको तर्फबाट उक्त आयोजना/कार्यक्रम सम्पन्न गर्न सम्झौता गर्न पाउँ भनी यो निबेदन गर्दछु ।
+
+
+
+            </p>
+
+            <div class="signature">
+                <div>.......................................................</div>
+                <div>निवेदक</div>
+                <div>
+                    उपभोक्ता समितिको अध्यक्ष/सचिव
+                </div>
+                <div>
+                    stamp...
+                </div>
+            </div>
+
+
+        <div class="title">
+            संलग्न कागजातहरु :
+        </div>
+        <div class="list">
+            (क) उपभोक्त्ता समिति गठन गर्ने आम भेलामा निर्णयको प्रतिलिपी <br />
+            (ख) उपभोक्ता समितिका अध्यक्ष् ,कोषाध्यक्ष् ,सचिवको नागरिक्ताको प्रतिलिपि <br />
+            (ग) योजानाको लागत अनुमान विवरण<br />
+            (घ) योजनाको कार्यान्वयनको कार्य तालिका
+
+        </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

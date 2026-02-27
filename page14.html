@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>page-14</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+            text-decoration: underline;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+        .committee-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: "Noto Serif Devanagari", serif;
+            font-size: 13px;
+        }
+
+        .committee-table th,
+        .committee-table td {
+            border: 1px solid #000;
+            padding: 6px 8px;
+            text-align: center;
+            line-height: 1.6rem;
+        }
+
+        .committee-table th {
+            background-color: #d9d9d9;
+            font-weight: bold;
+        }
+
+        .committee-table td.left {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .signature {
+            width: 200px;
+            margin-left: auto;
+            margin-top: 60px;
+            text-align: right;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: date...</div>
+
+        <div class="content">
+            <div>श्री प्रमुख प्रशासकीय अधिकृत ज्यू,</div>
+            municipality_name..., executive_office_name...
+            <div>address</div>
+
+            <div class="subject">
+                विषय: उपभोक्ता समिति गठन गरेको प्रतीबेदन पेश गरेको सम्बन्धमा ।
+            </div>
+
+
+            <p>
+                उपरोक्त सम्बन्धमा यस गाउँकार्यपालिकाको कार्यालय गाँउ सभाबाट चालु आ.ब fiscal-year... को लागि स्वीकृत भएको
+                यस को वडा न………. मा………………. योजना कार्यक्रम छनौट भई प्राथामिकतामा परेको हुँदा स्थानीय तहको उपभोक्ता समिति
+                गठन परिचालन तथा ब्यावस्थापन सम्बन्धी कार्यविधि २०७६ को दफा ४ बमोजिम उक्त आयोजनाबाट प्रत्यक्ष लाभान्वित
+                हुने परिवारको पहिचान गरी त्यस्ता घर परिवारको आमभेलाबाट सम्बन्धित आयोजना स्थलमै श्री………….. को अध्यक्षतामा
+                मिति ……………मा उपभोक्ता समिति गठन भएको व्यहोरा अनुरोध छ ।
+
+            </p>
+
+
+
+            <table class="committee-table">
+                <thead>
+                    <tr>
+                        <th>क्र.स.</th>
+                        <th>नाम</th>
+                        <th>पद</th>
+                        <th>ठेगाना</th>
+                        <th>सम्पर्क नं.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="left">    member1_name    </td>
+                        <td>    member1_position    </td>
+                        <td class="left">    member1_address    </td>
+                        <td>    member1_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="left">    member2_name    </td>
+                        <td>    member2_position    </td>
+                        <td class="left">    member2_address    </td>
+                        <td>    member2_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="left">    member3_name    </td>
+                        <td>    member3_position    </td>
+                        <td class="left">    member3_address    </td>
+                        <td>    member3_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="left">    member4_name    </td>
+                        <td>    member4_position    </td>
+                        <td class="left">    member4_address    </td>
+                        <td>    member4_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="left">    member5_name    </td>
+                        <td>    member5_position    </td>
+                        <td class="left">    member5_address    </td>
+                        <td>    member5_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="left">    member6_name    </td>
+                        <td>    member6_position    </td>
+                        <td class="left">    member6_address    </td>
+                        <td>    member6_contact    </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="left">    member7_name    </td>
+                        <td>    member7_position    </td>
+                        <td class="left">    member7_address    </td>
+                        <td>    member7_contact    </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="signature">
+                <div>.......................................................</div>
+                <div>name....</div>
+                <div>प्रमुख प्रशासकीय अधिकृत</div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
