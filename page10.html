@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>page-10</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+       
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+            text-decoration: underline;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+        .signature {
+            width: 200px;
+            margin-left: auto;
+            margin-top: 60px;
+            text-align: right;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: letter_date...</div>
+
+        <div class="content">
+            श्री bank_name..., शाखा कार्यालय
+
+            <div class="subject">
+               बिषय : खाता सञ्चालन गरिदिने सम्बन्धमा ।
+            </div>
+
+
+            <p>
+                प्रस्तुत विषयमा यस municipality-name... को लागि चालु आ.ब.fiscal-year... मा स्वीकृत भएको वडा नं.  ward_number... को  project_work_type.... योजना रकम रु budget... बिनियोजन भएको र उक्त योजनाको लागि  वडा नं.  ward_number... को  project_work_type.... गठन भएको हुदाँ समितिको अध्यक्ष name... , कोषाध्यक्ष name... र सचिब name... को संयुक्त दस्तखत बाट त्यस बैंकमा चल्ति खाता खोलिदिनुहुन अनुरोध छ ।
+
+
+
+            </p>
+
+            <div class="signature">
+                <div>.......................................................</div>
+                <div>name....</div>
+                <div>प्रमुख प्रशासकीय अधिकृत</div>
+            </div>
+
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

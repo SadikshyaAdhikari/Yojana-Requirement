@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>टिप्पणी र आदेश</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+     
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            font-size: 13px;
+            margin-top: 6px;
+        }
+
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+        
+
+        .list {
+            margin-top: 14px;
+            margin-left: 15px;
+            line-height: 2rem;
+            font-size: 13px;
+        }
+
+        .signature-line {
+            margin-top: 60px;
+            text-align: right;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .dotted {
+            border-top: 1px dotted #888;
+            width: 260px;
+            margin-left: auto;
+            margin-top: 60px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: letter_date...</div>
+
+        <div class="title">टिप्पणी र आदेश ।।</div>
+
+        <div class="subject">
+            विषय: आयोजना सम्झौता गरी कार्यदेश दिने सम्बन्धमा ।
+        </div>
+
+        <div class="content">
+            श्रीमान्,
+
+            <p>
+                यस  municipality_name...  गाउँपालिका को ..... सभाबाट चालु आ.व. fiscal_year.....
+                को स्वीकृत भएको मा आयोजना कार्यक्रम छनौट भई सो को प्राविधिक लगत इष्टिमेट समेत भएको, नियमानुसार उपभोक्ता समिति गठन भई सो को प्रतिवेदन प्राप्त भएको, वडा अध्यक्षबाट आयोजना कार्यक्रम सम्झौता गरिदिने सम्बन्धमा सिफारिस प्राप्त भएको र उपभोक्ता समितिका अध्यक्षबाट आयोजना कार्यक्रम सम्झौता गरी पाउँ भनी निवेदन दिएकोले देहाय बमोजिमको आयोजना सम्झौता गरी कार्यदेश दिन मुनासिव देखी निर्णयार्थ पेश गरेको छ ।
+
+            </p>
+
+            <div class="list">
+                १. आ.व.:     fiscal_year...     <br />
+                २. कार्यक्रम / आयोजनाको नाम:     project_name...     <br />
+                ३. लागत ईष्टिमेट रु.:     estimated_cost...    <br />
+                ४. विनियोजित रकम रु.:     allocated_amount...    <br />
+                ५. श्रम सहभागिता:     labor_participation...    <br />
+                ६. कार्य सम्झौता मिति:     agreement_date...   <br />
+                ७. उ.स.अ. को नाम:     committee_chairperson ...    <br />
+                ८. कार्य सम्पन्न गर्ने मिति:     completion_date  ....  
+            </div>
+
+            <div class="dotted"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

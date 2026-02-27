@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>page-15</title>
+
+    <!-- Nepali Serif Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 18mm 20mm 18mm;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Noto Serif Devanagari", serif;
+            color: #2f3e46;
+            background: #fff;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Empty Header Space */
+        .header-space {
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 8px;
+        }
+
+        .salutation {
+            font-size: 13px;
+            line-height: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .subject {
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            margin: 6px 0 12px 0;
+            text-decoration: underline;
+        }
+
+        .content {
+            font-size: 13px;
+            line-height: 1.9rem;
+            text-align: justify;
+        }
+
+        .signature {
+            width: 200px;
+            margin-left: auto;
+            margin-top: 60px;
+            text-align: right;
+        }
+
+          .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 150px;
+        }
+
+        .item-title {
+            font-weight: bold;
+        }
+
+        .item {
+            padding: 10px;
+
+        }
+        .item2 {
+            padding: 10px;
+            text-align: right;
+        }
+
+         .bodhartha {
+            margin-top: 30px;
+            margin-bottom: 30px;;
+            font-size: 13px;
+            line-height: 1rem;
+        }
+
+        .bodhartha-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+
+
+        @media print {
+            body {
+                margin: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- Empty Header Area -->
+        <div class="header-space"></div>
+
+        <div class="date">मिति: letter_date...</div>
+
+        <div class="content">
+            <div class="salutation">
+                <p>श्रीमान्,</p>
+                <p>वडा नं. ward_number... को project_work_type...</p>
+            </div>
+
+            <div class="subject">
+                विषय: सम्झौता सम्बन्धमा ।
+            </div>
+
+            <p>
+                यसमा चालु आ.व. fiscal-year... को लागि गाँउ सभा बाट स्वीकृत बार्षिक योजना तथा कार्यक्रम अन्तर्गत तर्फको सी न मा
+                रहेको लागि रु budget... विनियोजन भएको छ।
+
+            </p>
+            <p>
+                उक्त योजना कार्यन्वयन का लागि योजना बाट प्रत्यक्ष लाभ पाउने उपभोक्ता भेला योजना स्थलमा जनप्रतिनिधि/कर्मचारीको उपस्थितिमा मिति full-date... मा number... जना उपस्थितिमा अध्यक्ष/सचिब/कोषाध्यक्षको पदमा सहित number... जाना महिला समाबेस भएको र सोहि भेला बाट योजनागत अनुगमन समिति समेत गठन भएको देखिन्छ।
+            </p>
+            <p>
+                हाल सम्झौताका लागि को प्रतिबेदन सिफारिस पत्र उपभोक्ताभेला को उपस्थिति र उपभोक्ता समिति को बैठकको निर्णय को प्रतिलिपि हरु संलग्न राखी सम्झौताका लागि उपभोक्ता समुह बाट मीति full-date... गते निबेधन प्राप्त भयको छ।
+            </p>
+            <p>
+                सो योजनाकोलागि प्राबिधिक साखाबाट रु budget... को लागत अनुमान स्वीकृत भइ पेस हुन् आएकाले लागत अनुमान अनुसारको कार्य सो योजनामा स्वीकृत बजेटबाट सम्पन्न गर्ने गरी उक्त योजना कार्यान्वयनको लागि गठित उपभोक्ता समिति संग सम्झौता गरि निर्णयार्थ पेश गरेको छु।
+            </p>
+
+            <div class="grid-container">
+                    <div class="item">
+                        <p class="item-title">सिफारीस गर्ने </p>
+                        <p>name .......... </p>
+                        <p>योजना शाखा अधिकृत </p>
+                    </div>
+                    <div class="item2">
+                        <p class="item-title">स्वीकृत गर्ने</p>
+                        <p>name .......... </p>
+                        <p>प्रमुख प्रशासकीय  </p>
+                    </div>
+                </div>
+
+                 <!-- Bodhartha Section -->
+            <div class="bodhartha">
+                <p class="bodhartha-title">बोधार्थ :</p>
+
+                <p>श्री</p>
+                <p>name....</p>
+
+               
+            </div>
+
+            <div>
+                 <p>
+                    एक प्रति सम्झौता तथा लाई यसै साथ संग्लन छ साइट इन्चार्ज / प्राबिधिक खटाइ
+                    यसै बमोजिम कार्य गराउनु पर्दछ ।
+                </p>
+
+                <p>
+                    municipality_full_address......
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
