@@ -16,7 +16,7 @@
             --primary-color: red;
             --secondary-color: #455A64;
             --border-color: black;
-            --font-size-base: 15px;
+            --font-size-base: 14px;
         }
 
         * {
@@ -50,6 +50,7 @@
         .municipality_section {
             padding-bottom: 0.4rem;
             min-height: 90px;
+            border-bottom: 1px solid green;
         }
 
         .contain {
@@ -75,18 +76,18 @@
             line-height: 1.4;
         }
 
-        .municipality_info h2 {
+        /* .municipality_info h2 {
             font-size: 18px;
             font-weight: bold;
         }
 
         .municipality_info h3 {
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .municipality_info h4 {
-            font-size: 13px;
-        }
+            font-size: 14px;
+        } */
 
         /* SERIAL SECTION */
 
@@ -95,7 +96,7 @@
             padding-top: 15px;
             display: flex;
             justify-content: space-between;
-            font-size: 13px;
+            font-size: 14px;
         }
 
 
@@ -118,19 +119,22 @@
             text-align: left;
             line-height: 1.65rem;
             /* font-weight: 400; */
-            font-size: 13px;
+            font-size: 14px;
+        }
+        .page-break {
+            page-break-before: always;
         }
 
         .section-title {
             font-weight: bold;
-            font-size: 13px;
+            font-size: 14px;
             margin-top: 4px;
 
         }
 
         .section-title-terms {
             font-weight: bold;
-            font-size: 13px;
+            font-size: 14px;
             margin-top: 16px;
             text-decoration: underline;
 
@@ -138,7 +142,7 @@
 
         .section-title-agree {
             font-weight: bold;
-            font-size: 13px;
+            font-size: 14px;
             margin-top: 16px;
             text-align: center;
             text-decoration: underline;
@@ -147,14 +151,14 @@
 
         .indent {
             margin-left: 20px;
-            font-size: 13px;
+            font-size: 14px;
 
 
         }
 
         .indent_inline {
             margin-left: 5px;
-            font-size: 13px;
+            font-size: 14px;
 
 
         }
@@ -170,7 +174,7 @@
             width: 100%;
             border-collapse: collapse;
             font-family: "Noto Serif Devanagari", serif;
-            font-size: 13px;
+            font-size: 14px;
         }
 
         .member-table th,
@@ -188,7 +192,7 @@
         }
 
         .member-table td {
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .member-table td.left {
@@ -307,12 +311,13 @@
                 <p class="indent">९. अन्यबाट रु. - other_contribution.......... </p>
                 <p class="indent">जम्मा लागत अनुमान: total_estimated_cost.......... </p>
 
-
+                <div class="page-break">
                 <p class="section-title">२. आयोजनाबाट लाभान्वित हुने:</p>
                 <p class="indent">१. घरपरिवार संख्या: household_count.......... </p>
                 <p class="indent">२. जनसंख्या: population.......... </p>
                 <p class="indent">३. संगठित संस्था: organized_groups.......... </p>
                 <p class="indent">४. अन्य: others .......... </p>
+                </div>
             </div>
 
 
